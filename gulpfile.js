@@ -151,13 +151,11 @@ gulp.task('clean:dist', function (done) {
 });
 
 // Copy html files to dist
-var injectPartials = require('gulp-inject-partials');
 gulp.task('html', function () {
   return gulp.src(paths.pages.all, {
       base: paths.pages.folder
     })
     .pipe(newer(paths.dist.folder))
-    .pipe(injectPartials())
     .pipe(gulp.dest(paths.dist.folder))
     .pipe(reload({
       stream: true
