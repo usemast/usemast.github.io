@@ -9,6 +9,7 @@ const autoprefixer = require('gulp-autoprefixer'),
   del = require('del'),
   eslint = require('gulp-eslint'),
   gulp = require('gulp'),
+  htmlmin = require('gulp-htmlmin'),
   log = require('fancy-log'),
   newer = require('gulp-newer'),
   path = require('path'),
@@ -152,9 +153,13 @@ gulp.task('clean:dist', function (done) {
 
 // Copy html files to dist
 gulp.task('html', function () {
-  return gulp.src(paths.pages.all, {
+  return gulp.src(paths.pages.html, {
       base: paths.pages.folder
     })
+    .pipe(htmlmin({
+      removeComments: true,
+      collapseWhitespace: true
+    }))
     .pipe(newer(paths.dist.folder))
     .pipe(gulp.dest(paths.dist.folder))
     .pipe(reload({
