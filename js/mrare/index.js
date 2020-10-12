@@ -1,14 +1,13 @@
 
 import './aos';
+import './svg-injector';
 import './background-images';
-import mrCountdown from './countdown';
 import mrCountup from './countup';
 import mrDropdownGrid from './dropdown-grid';
 import './fade-page';
 import mrFlatpickr from './flatpickr';
 import './flickity';
 import mrFormEmail from './form-email';
-import mrIonRangeSlider from './ion-rangeslider';
 import mrIsotope from './isotope';
 import './jarallax';
 import mrMapsStyle from './maps-style';
@@ -21,7 +20,6 @@ import './prism';
 import mrReadingPosition from './reading-position';
 import mrSmoothScroll from './smooth-scroll';
 import mrSticky from './sticky';
-import './svg-injector';
 import mrTwitterFetcher from './twitter-fetcher';
 import mrTypedText from './typed-text';
 import mrUtil from './util';
@@ -34,12 +32,10 @@ import './wizard';
 })();
 
 export {
-  mrCountdown,
   mrCountup,
   mrDropdownGrid,
   mrFlatpickr,
   mrFormEmail,
-  mrIonRangeSlider,
   mrIsotope,
   mrMapsStyle,
   mrMaps,
