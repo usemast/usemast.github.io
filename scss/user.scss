@@ -1,9 +1,16 @@
-// 
-// 
 // user.scss
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
-a {
+html {
+  scroll-behavior: smooth;
+}
+
+
+p a {
   text-decoration: underline;
+}
+
+h2.lede {
+  font-weight: 300;
 }
