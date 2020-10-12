@@ -6,11 +6,18 @@ html {
   scroll-behavior: smooth;
 }
 
-
 p a {
   text-decoration: underline;
 }
 
 h2.lede {
   font-weight: 300;
+}
+
+.icon.icon-lg {
+  height: 5rem !important;
+}
+
+.navbar-dark {
+  border-bottom: none !important;
 }
