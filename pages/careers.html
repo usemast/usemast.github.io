@@ -5,26 +5,7 @@
     <div class="loader">
       <div class="loading-animation"></div>
     </div>
-
-    <div class="navbar-container">
-      <nav class="navbar navbar-expand-lg navbar-transparent navbar-light bg-primary-alt" data-sticky="top">
-        <div class="container">
-          <a class="navbar-brand fade-page" href="index.html">
-            <img src="assets/img/logo-dark.png" alt="Mast logo" height="30rem">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
-            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav">
-              <li class="nav-item text-dark"><a href="/careers.html">Careers</a></li>
-            </ul>
-            <a href="/index.html#register" class="btn btn-primary ml-lg-3">Register your interest</a>
-          </div>
-        </div>
-      </nav>
-    </div>
+    @@include('./nav-light.html')
     <section class="bg-primary-alt header-inner o-hidden">
       <div class="container">
         <div class="row my-3">
@@ -32,7 +13,7 @@
         <div class="row py-6 text-center justify-content-center align-items-center layer-2">
           <div class="col-xl-8 col-lg-10">
             <h1 class="display-4">Join Team Mast.</h1>
-            <p class="lead mb-0">We're building a team of finance, lending and technology experts to change the way lenders do business and unlock billions in new business for them.</p>
+            <p class="lead mb-0">We're building a team of technology, finance and lending experts to change the way lenders do business and unlock billions in new business for them.</p>
           </div>
         </div>
       </div>
@@ -46,12 +27,6 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-8">
-            <div class="my-6 text-center">
-              <span class="h1">We're building an ecosystem of world-class mortgage technology.</span>
-            </div>
-            <p class="lead"><strong>We think the mortgage industry is under-disrupted.</strong> An oligopoly of technology suppliers provide a handful of systems which get infrequent updates and are painful to customise. Lenders are frustrated and ready for change.</p>
-            <p class="lead mb-0"><strong>We're building a class-leading, cloud-native mortgage origination system</strong> that helps lenders receive and process more applications in less time. We think that <strong>with the right technology we can get mortgage applications to lenders in the best possible shape</strong> - without missing documents, bad data or policy violations - so that lenders can make a decision faster. And as a result, lenders can to offer more loans, cut costs, and increase their bottom line. 🚀</p>
-            <hr>
             <p class="lead"><strong>We're looking for full-stack engineers to help us build Mast.</strong></p>
             <p class="lead">Our stack is primarily Ruby on Rails, Postgres, with a sprinkling of Vue.js. Where possible, we strive for simplicity - to not over-engineer, or use fancy technology because it's there, but to build robust, simple systems that are easy to change.</p>
             <p class="lead">As an early employee, you'd get the chance to influence our technical architecture and our product strategy. We're looking for all-rounders who aren't afraid of uncertainty and can help scope and define the features they're implementing.</p>
