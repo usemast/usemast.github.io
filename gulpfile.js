@@ -333,6 +333,9 @@ gulp.task('serve', function (done) {
   browserSync({
     server: {
       baseDir: './dist',
+      serveStaticOptions: {
+        extensions: ["html"]
+      },
       index: "index.html"
     }
   });
