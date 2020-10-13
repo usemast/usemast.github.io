@@ -10,7 +10,7 @@ p a {
   text-decoration: underline;
 }
 
-h2.lede {
+h2.lede, h3.lede {
   font-weight: 300;
 }
 
@@ -20,4 +20,14 @@ h2.lede {
 
 .navbar-dark {
   border-bottom: none !important;
+}
+
+@media (max-width: 576px) {
+  .standfirst {
+    text-align: left !important;
+  }
+}
+
+div.standfirst {
+  text-align: center;
 }
