@@ -28,7 +28,14 @@ h2.lede, h3.lede {
   }
 
   ul.navbar-nav > li.nav-item {
-    padding-left: none;
+    padding-left: 0 !important;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .footer-col {
+    padding-left: 2.2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -39,6 +46,7 @@ div.standfirst {
 ul.navbar-nav > li.nav-item {
   padding-left: 1rem;
 }
+
 
 button.btn-cta {
   width: 15rem;
