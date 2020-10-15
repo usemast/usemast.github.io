@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer'),
   }),
   del = require('del'),
   eslint = require('gulp-eslint'),
+  fileinclude = require('gulp-file-include'),
   gulp = require('gulp'),
   htmlmin = require('gulp-htmlmin'),
   log = require('fancy-log'),
@@ -156,6 +157,10 @@ gulp.task('html', function () {
   return gulp.src(paths.pages.html, {
       base: paths.pages.folder
     })
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: 'pages/partials'
+    }))
     .pipe(htmlmin({
       removeComments: true,
       collapseWhitespace: true
@@ -328,6 +333,9 @@ gulp.task('serve', function (done) {
   browserSync({
     server: {
       baseDir: './dist',
+      serveStaticOptions: {
+        extensions: ["html"]
+      },
       index: "index.html"
     }
   });
@@ -335,7 +343,6 @@ gulp.task('serve', function (done) {
 });
 
 gulp.task('watch', function (done) {
-
   // PAGES
   // Watch only .html pages as they can be recompiled individually
   gulp.watch([paths.pages.html], {

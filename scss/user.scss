@@ -1,9 +1,62 @@
-// 
-// 
 // user.scss
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
-a {
+html {
+  scroll-behavior: smooth;
+}
+
+p a {
   text-decoration: underline;
+}
+
+h2.lede, h3.lede {
+  font-weight: 300;
+}
+
+.icon.icon-lg {
+  height: 5rem !important;
+}
+
+.navbar-dark {
+  border-bottom: none !important;
+}
+
+@media (max-width: 576px) {
+  .standfirst {
+    text-align: left !important;
+  }
+
+  ul.navbar-nav > li.nav-item {
+    padding-left: 0 !important;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .footer-col {
+    padding-left: 2.2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.footer-col {
+  padding-bottom: 2rem;
+}
+
+div.standfirst {
+  text-align: center;
+}
+
+ul.navbar-nav > li.nav-item {
+  padding-left: 1rem;
+}
+
+button.btn-cta {
+  width: 15rem;
+  height: 4.1rem;
+  font-size: 1.35rem;
+}
+
+label {
+  margin-bottom: 0;
 }
