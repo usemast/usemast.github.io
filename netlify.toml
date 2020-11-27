@@ -1,3 +1,10 @@
 [build]
   publish = "dist"
   command = "gulp build"
+
+[[redirects]]
+  from = "/news/*"
+  to = "https://news.usemast.com/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
