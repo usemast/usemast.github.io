@@ -65,7 +65,7 @@ getPaths = () => {
     pages: {
       folder: 'pages',
       all: ['pages/**/*'],
-      html: 'pages/*.html',
+      html: 'pages/*',
       liquid: 'pages/**/*.liquid',
       liquidRoot: 'pages/',
       includes: 'pages/include/',
