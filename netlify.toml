@@ -3,8 +3,16 @@
   command = "gulp build"
 
 [[redirects]]
-  from = "/news/*"
-  to = "https://news.usemast.com/:splat"
+  from = "/news"
+  to = "/news/index.html"
   status = 200
-  force = true
-  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "https://usemast.com/news/*"
+  to = "https://news.usemast.com/:splat"
+  status = 302
+
+[[redirects]]
+  from = "http://usemast.com/news/*"
+  to = "https://news.usemast.com/:splat"
+  status = 302
