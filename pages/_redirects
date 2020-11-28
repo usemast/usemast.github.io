@@ -1,2 +1,1 @@
-/news https://usemast.com/news/index.html 200!
-/news/* https://news.usemast.com/news/:splat 200!
+/news/* https://news.usemast.com/news/:splat 200
