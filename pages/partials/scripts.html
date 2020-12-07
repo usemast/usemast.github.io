@@ -14,3 +14,17 @@
 <script type="text/javascript">
   window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
 </script>
+
+  <script>
+    $( document ).ready( function() {
+      $('#mc-embedded-subscribe-form').submit(function() {
+        var checked = $("#mc-embedded-subscribe-form input:checked").length > 0;
+        if (!checked) {
+          $('#mc-checkbox-warning').show()
+          return false;
+        } else {
+          $('#mc-checkbox-warning').hide()
+        };
+      });
+    } )
+  </script>
