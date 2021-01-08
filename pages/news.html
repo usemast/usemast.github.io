@@ -38,7 +38,7 @@
     <script>
       $.getJSON( "https://news.usemast.com/news/ghost/api/v3/content/posts/?key=d3a8fc7c919772d12b07fe7e42", function( data ) {
         $.each( data.posts, function( i, post ) {
-          let date = new Date(Date.parse(post.created_at))
+          let date = new Date(Date.parse(post.published_at))
           let prettyDate = date.toLocaleDateString(undefined, {day: 'numeric', month: 'long', year: 'numeric'})
 
           if (post.feature_image != null) {
