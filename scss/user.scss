@@ -60,3 +60,9 @@ button.btn-cta {
 label {
   margin-bottom: 0;
 }
+
+@media (min-width: 768px) {
+  .card-article-wide {
+      min-height: 12rem;
+  }
+}
