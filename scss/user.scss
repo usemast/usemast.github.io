@@ -66,3 +66,20 @@ label {
       min-height: 12rem;
   }
 }
+
+.card-icon-3 .badge {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    max-height: inherit;
+}
+
+@media (min-width: 768px) {
+  .card-icon-3 {
+    min-height: 22.5rem !important;
+  }
+}
+
+.bg-warning-light {
+  background-color: #FBEBAC;
+}
