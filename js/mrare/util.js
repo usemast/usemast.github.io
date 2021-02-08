@@ -22,7 +22,7 @@ const mrUtil = (($) => {
   $('body').tooltip({ selector: '[data-toggle="tooltip"]', container: 'body' });
 
   // Activate popovers
-  $('body').popover({ selector: '[data-toggle="popover"]', container: 'body' });
+  $('body').popover({ selector: '[data-toggle="popover"]', container: 'body', trigger: 'hover' });
 
   // Activate toasts
   $('.toast').toast();
