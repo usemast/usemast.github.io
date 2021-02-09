@@ -23,7 +23,7 @@ const mrUtil = (($) => {
 
   // Activate popovers
   const isTouchDevice = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
-  $('body').popover({ selector: '[data-toggle="popover"]', container: 'body', trigger: isTouchDevice ? 'click focus' : 'hover' });
+  $('body').popover({ selector: '[data-toggle="popover"]', container: 'body', trigger: isTouchDevice ? 'focus' : 'hover' });
 
   // Activate toasts
   $('.toast').toast();
