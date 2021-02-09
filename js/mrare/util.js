@@ -22,7 +22,8 @@ const mrUtil = (($) => {
   $('body').tooltip({ selector: '[data-toggle="tooltip"]', container: 'body' });
 
   // Activate popovers
-  $('body').popover({ selector: '[data-toggle="popover"]', container: 'body', trigger: 'hover' });
+  const isTouchDevice = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
+  $('body').popover({ selector: '[data-toggle="popover"]', container: 'body', trigger: isTouchDevice ? 'click focus' : 'hover' });
 
   // Activate toasts
   $('.toast').toast();

@@ -2,6 +2,18 @@
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
+/* magic debugging code */
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
