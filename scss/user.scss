@@ -2,6 +2,18 @@
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
+/* magic debugging code */
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -65,4 +77,40 @@ label {
   .card-article-wide {
       min-height: 12rem;
   }
+}
+
+.card-icon-3 .badge {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    max-height: inherit;
+}
+
+@media (min-width: 768px) {
+  .card-icon-3 {
+    min-height: 22.5rem !important;
+  }
+}
+
+.bg-warning-light {
+  background-color: #FBEBAC;
+}
+
+.bg-pattern-lines-dark {
+  background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23858585' fill-opacity='0.5' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-pattern-lines-light {
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e5edf6' fill-opacity='0.48' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-pattern-signal {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23656565' fill-opacity='0.26' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.vignette-shadow {
+  box-shadow: inset 0 0 100px black;
 }
