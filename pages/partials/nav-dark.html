@@ -10,7 +10,17 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
-          <li class="nav-item text-light"><a href="/products">Products</a></li>
+          <li class="nav-item dropdown text-light">
+            <a href="#" class="nav-item dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Products</a>
+            <div class="dropdown-menu row" style="left: -828px;">
+              <div class="col-auto" data-dropdown-content="" style="left: 828px;">
+                <div class="dropdown-grid-menu bg-dark">
+                  <a href="/application-platform" class="dropdown-item fade-page">Application Platform</a>
+                  <a href="/policy-engine" class="dropdown-item fade-page">Policy Engine</a>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="nav-item text-light"><a href="/news">News</a></li>
           <li class="nav-item text-light"><a href="/careers">Careers</a></li>
           <li class="nav-item text-light"><a href="/about">About</a></li>
