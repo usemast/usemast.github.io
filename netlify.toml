@@ -1,3 +1,13 @@
 [build]
   publish = "dist"
   command = "gulp build"
+
+[[redirects]]
+  from = "/news/*"
+  to = "https://news.usemast.com/news/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/application-platform"
+  to = "/origination-platform"
+  status = 200
