@@ -9,6 +9,8 @@
 //   outline: solid #f00 1px !important;
 // }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
 .row {
   margin-right: 0;
   margin-left: 0;
@@ -136,4 +138,10 @@ span.gold{
 
 #subheading-dot {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+.logotype {
+  font-family: 'Raleway';
+  font-weight: 900;
+  letter-spacing: 0;
 }
