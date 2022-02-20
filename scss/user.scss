@@ -137,3 +137,17 @@ span.gold{
 #subheading-dot {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.logotype {
+  font-family: 'Raleway';
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+// taken from basecamp.com
+.highlight {
+  border-radius: 1em 0 1em 0;
+  // background-image: linear-gradient(-100deg, rgba(255,224,0,0.3), rgba(255,224,0,0.7) 95%, rgba(255,224,0,0.1));
+  background-image: linear-gradient(-100deg, rgba(theme-color('primary-2'),0.075), rgba(theme-color('primary-2'),0.4) 95%, rgba(theme-color('primary-2'),0.035));
+
+}
