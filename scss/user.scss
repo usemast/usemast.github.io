@@ -161,3 +161,11 @@ span.gold{
 .modal-backdrop {
   z-index: 100;
 }
+
+.navbar[data-overlay], .navbar[data-sticky="top"] {
+  z-index: inherit;
+}
+
+.nav-link.btn-light:not(.active) {
+  background: #c2c2c2e8;
+}
