@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
   @@include('./header.html')
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
   <body>
     <div class="loader">
       <div class="loading-animation"></div>
@@ -14,7 +20,7 @@
           <div class="standfirst col-xl-8 col-lg-10">
             <h1 class="display-4">About Us.</h1>
             <p class="lead mb-0">
-              Our mission is to bring speed and simplicity to the mortgage journey. We work with lenders to make them more efficient and easier to do business with, helping consumers obtain a mortgage much faster. <strong>We're making lending better for everyone.</strong>
+              Our mission is to bring speed and simplicity to the mortgage journey. We work with lenders to ensure our platform makes them more efficient and easier to do business with, helping consumers obtain a mortgage much faster. <strong>We're making lending better for everyone.</strong> 
             </p>
           </div>
         </div>
@@ -32,33 +38,84 @@
             <div class="my-6 text-center">
               <span class="h1">We're building an ecosystem of world-class mortgage technology.</span>
             </div>
-            <p class="lead">It's an open secret that the mortgage journey is broken and outdated. Many people in the UK have to wait over 60 days to get a decision on their mortgage application.
-
+            <p class="lead">
+              It's an open secret that the mortgage journey is painful and slow for many people in the UK. Some borrowers have to wait over 60 days for a decision on their mortgage application.
             </p>
             <p class="lead">
-              With the right technology, we can get mortgage applications to lenders in the best possible shape – without missing documents, bad data or policy violations – so that lenders can make a decision faster. Lenders will process more loans, intermediaries will have more time to focus on building relationships with their clients, and most importantly customers will have a much better experience during the biggest financial decision of their lives.
+              With the right technology, we can improve the experience for everyone involved. For brokers, we can make lenders easier and simpler to do business with. For lenders, we can help smooth operations and get the right information into the hands of those who need it faster. And for the customer, their clunky stressful applications can be made a thing of the past.
             </p>
 
             <div class="mt-6 mb-3 text-center">
               <span class="h3">
-                Who We Are
+                The Mast Team
               </span>
             </div>
 
-            <p class="lead">We're a venture-backed team of technologists, finance experts (and doughnut lovers). With over 25 years of combined experience, we're tackling the huge mission of making lending better.</p>
+            <p>
+              Mast’s HQ is in London, and our team is a combination of experienced finance professionals and world-class software engineers working collaboratively side-by-side.
+            </p>
 
-            <hr>
+            <p>
+              Our Product and Management teams have experience in Digital Banking, Mortgage Lending, Commercial Banking, and Capital Markets. Our engineers have previously worked for industry-leading fintechs and cloud computing companies. They have a wide range of skills that allow us to build slick, stable and secure technology.
+            </p>
 
-            <p class="lead"><strong>We are a principles-first company.</strong> No matter the circumstances, our principles are our north star. They guide us to become the best we can be and help us make decisions today to get us one step closer to our mission.</p>
+            <p>
+              We’re pooling together our experience to bring the best practices from each of these fields to mortgage technology.
+            </p>
 
-            <p class="lead"><strong>People</strong>: Customers or employees, people always come first. People build technology to serve people. We are at the service of people, always.</p>
-            <p class="lead"><strong>Integrity</strong>: Always do what is right and what is best for everyone.</p>
-            <p class="lead"><strong>Candid Feedback</strong>: Giving and receiving feedback well is one of the most important traits to learning. At Mast, anyone can voice their opinion, criticise ideas and call us out when we don't do things well, with the aim of assisting.</p>
-            <p class="lead"><strong>Self awareness</strong>: We are all humans, we are all flawed and none of us know everything – and that should never be a limiting factor. It's okay to make mistakes, as long as you are happy to ask for help and want to learn. We succeed as a team.</p>
-            <p class="lead"><strong>Reliability</strong>: We invest heavily in infrastructure, design and great service. Trust and reputation is a pillar of our identity.</p>
-            <p class="lead"><strong>Honesty and transparency</strong>: We provide a safe and open environment. We rely on truthful and transparent communication to ensure that the best ideas win.</p>
-            <p class="lead"><strong>Pursuit of excellence</strong>: Everything we do, we do well or we don’t do at all. Even the things that we don’t see at the surface. Excellence is in the process and in the details. The rest will take care of itself.</p>
+            <p>
+              As a team, we focus on listening to and working closely with our clients to ensure we completely understand their pain points before we start building features. Our spotlight on customer feedback at every level of the organisations we work with helps ensure we’re as efficient as possible in delivering a great product.
+            </p>
 
+            <p>
+              If you’re interested in joining us, check out our careers page, or if you’d like to know more about how we might be able to help your business, get in touch below.
+            </p>
+
+            <!-- <p class="lead"><strong>We are a principles-first company.</strong> No matter the circumstances, our principles are our north star. They guide us to become the best we can be and help us make decisions today to get us one step closer to our mission.</p> -->
+            <!--  -->
+            <!-- <p class="lead"><strong>People</strong>: Customers or employees, people always come first. People build technology to serve people. We are at the service of people, always.</p> -->
+            <!-- <p class="lead"><strong>Integrity</strong>: Always do what is right and what is best for everyone.</p> -->
+            <!-- <p class="lead"><strong>Candid Feedback</strong>: Giving and receiving feedback well is one of the most important traits to learning. At Mast, anyone can voice their opinion, criticise ideas and call us out when we don't do things well, with the aim of assisting.</p> -->
+            <!-- <p class="lead"><strong>Self awareness</strong>: We are all humans, we are all flawed and none of us know everything – and that should never be a limiting factor. It's okay to make mistakes, as long as you are happy to ask for help and want to learn. We succeed as a team.</p> -->
+            <!-- <p class="lead"><strong>Reliability</strong>: We invest heavily in infrastructure, design and great service. Trust and reputation is a pillar of our identity.</p> -->
+            <!-- <p class="lead"><strong>Honesty and transparency</strong>: We provide a safe and open environment. We rely on truthful and transparent communication to ensure that the best ideas win.</p> -->
+            <!-- <p class="lead"><strong>Pursuit of excellence</strong>: Everything we do, we do well or we don’t do at all. Even the things that we don’t see at the surface. Excellence is in the process and in the details. The rest will take care of itself.</p> -->
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row justify-content-center pt-6">
+          <div class="col-md-6">
+            <div class="m-xl-4 m-3">
+              <div class="text-center mb-4">
+                <h4 class="h3 mb-1">Get in touch</h4>
+                <p>Leave your details and a member of the Mast team will be in touch to organise a call.</p>
+              </div>
+              <div class="pt-3 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <form name="contact" method="POST" data-netlify="true">
+                  <div class="form-group">
+                    <div class="col-12">
+                      <input name="email" type="email" class="form-control mb-1" required="" placeholder="Your email">
+                    </div>
+                    <div class="col-12">
+                      <input name="name" type="text" class="form-control mb-1" required="" placeholder="First name">
+                    </div>
+                    <div class="col-12">
+                      <input name="company" type="text" class="form-control mb-1" required="" placeholder="Company">
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary btn-loading btn-block">
+                        <span>Submit</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9931.326231020053!2d-0.1115799!3d51.5163062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4c9ff00001%3A0x7ecf0f76258f27cf!2sWeWork%20-%20Office%20Space%20%26%20Coworking!5e0!3m2!1sen!2suk!4v1677706850195!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
