@@ -9,6 +9,13 @@
 //   outline: solid #f00 1px !important;
 // }
 
+@media (min-width: 1200px) {
+  .container-wide {
+    max-width: 1300px !important;
+  }
+}
+
+
 .row {
   margin-right: 0;
   margin-left: 0;
