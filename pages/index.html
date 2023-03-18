@@ -7,7 +7,7 @@
     </div>
     @@include('./nav-dark.html')
     <div data-overlay="" class="bg-primary-3 text-light o-hidden position-relative">
-      <section class="min-vh-25 o-hidden d-flex flex-column justify-content-center pt-6 pb-2">
+      <section class="min-vh-25 o-hidden d-flex flex-column justify-content-center pt-6 pb-3">
         <div class="container">
           <div class="standfirst row justify-content-center align-items-center">
             <div class="col-11">
@@ -18,7 +18,9 @@
                 Mast Platform is a flexible, <strong>cloud-native mortgage origination system</strong> designed to <strong>help lenders process applications faster</strong>.
               </h3>
 
-              @@include('./calendly.html', {class: 'btn btn-primary btn-lg py-2 mt-4', text: 'Get in touch'})
+              <div class="justify-content-center d-flex pb-1">
+                @@include('./calendly.html', {class: 'btn btn-primary btn-lg py-2 mt-4', text: 'Get in touch'})
+              </div>
             </div>
           </div>
         </div>
@@ -110,17 +112,17 @@
       </div>
     </section>
 
-    <section class="bg-white text-dark">
+    <section class="bg-white text-dark pt-0">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate text-right" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate text-center text-md-right" data-aos="fade-up" data-aos-delay="300">
             <span class="display-3 text-dark d-block" data-countup="" data-start="1" data-end="22"  data-duration="2" data-suffix="%" data-grouping="true">22%</span>
             <span class="h4">increased conversion from DIP to completion</span>
           </div>
-          <div class="col-md-2 mb-3 mb-4 mb-md-0 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-2 mb-3 mb-md-0 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="300">
             <img width="120px" src="assets/img/mbsl-logo.png" alt="MBS Lending logo" style="filter: grayscale(100%); opacity: 0.5;">
           </div>
-          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate text-left" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate text-center text-md-left" data-aos="fade-up" data-aos-delay="200">
             <span class="display-3 text-dark d-block" data-countup="" data-start="1" data-end="73" data-duration="2.5" data-grouping="true" data-suffix="%">73%</span>
             <span class="h4">more lending with the same operational capacity</span>
           </div>
