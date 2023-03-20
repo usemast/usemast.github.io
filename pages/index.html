@@ -7,16 +7,20 @@
     </div>
     @@include('./nav-dark.html')
     <div data-overlay="" class="bg-primary-3 text-light o-hidden position-relative">
-      <section class="min-vh-25 o-hidden d-flex flex-column justify-content-center">
+      <section class="min-vh-25 o-hidden d-flex flex-column justify-content-center pt-6 pb-3">
         <div class="container">
           <div class="standfirst row justify-content-center align-items-center">
-            <div class="col-11">
-              <h1 class="display-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Turbocharging mortgages<span id="subheading-dot">.</span><h1>
-              <h3 class="lede" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600">
-                Mast is building <strong>cloud-native mortgage origination technology</strong> to help lenders process <strong>more applications in less time</strong>.
+            <div class="col">
+              <h1 class="display-3">
+                Process mortgage applications faster and offer a cutting edge experience<span class="subheading-dot">.</span>
+                <h1>
+              <h3 class="lede pt-3">
+                Mast Platform is a flexible, <strong>cloud-native mortgage origination system</strong> designed to <strong>help lenders process applications faster</strong>.
               </h3>
 
-              
+              <div class="justify-content-center d-flex pb-1">
+                @@include('./calendly.html', {class: 'btn btn-primary btn-lg py-2 mt-4', text: 'Get in touch'})
+              </div>
             </div>
           </div>
         </div>
@@ -34,31 +38,31 @@
           <div class="col-md-6 col-lg-5 my-auto">
             <h2 class="h1 text-center">Trusted by</h2>
             <div class="text-center">
-              <a href="https://mbslending.co.uk" target="_blank">
+              <a href="/mbs" target="_blank">
                 <img width="175px" src="assets/img/mbsl-logo.png" alt="MBS Lending logo">
               </a>
-              <a href="https://www.usemast.com/news/mbs-lending-launches-online-application-portal-with-new-fintech-mast/">
-                <div class=""><strong><p class="hover-arrow">Read the launch announcement</p></strong></div>
+              <a href="/mbs">
+                <div class=""><strong><p class="hover-arrow">Read the case study</strong></div>
               </a>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-7" data-aos="fade-left">
+          <div class="col-md-6 col-lg-7">
             <div>
               <div class="carousel-cell">
                 <div class="card card-body">
                   <div class="my-md-2 flex-grow-1">
                     <h4>
-                      &ldquo;The system is hugely beneficial to us internally, improving speed, packaging and internal processes which enable us to focus on providing the best possible service to our brokers and customers.&rdquo;
+                      &ldquo;Our partnership with Mast has proven to be hugely valuable to our business and catapulted us into the 21st century. <mark>Their technical expertise is second to none and has proven to be a real game-changer,</mark> especially when requiring complex lending rules.&rdquo;
                     </h4>
                   </div>
                   <div class="avatar-author align-items-center">
-                    <a href="https://www.linkedin.com/in/danatkinsontmbs/" target="_blank">
+                    <a class="d-none d-lg-block" href="https://www.linkedin.com/in/danatkinsontmbs/" target="_blank">
                       <img src="assets/img/dan-atkinson.jpg" alt="Headshot of Dan Atkinson" class="avatar">
                     </a>
                     <div class="ml-2">
                       <h6>Dan Atkinson</h6>
-                      <span>Head of Intermediaries, The Melton Building Society</span>
+                      <span>Head of Intermediaries, Melton Building Society</span>
                     </div>
                   </div>
                 </div>
@@ -69,105 +73,66 @@
       </div>
     </section>
 
-    <section>
+    <section class="has-divider">
       <div class="container">
-        <div class="row justify-content-center text-center mb-6">
-          <div class="col-xl-12 col-lg-9">
-            <h2 class="display-3 mx-xl-2">See how we speed up lending</h2>
-            <h3 class="light">
-             Filter out unsuitable loan applications before they're submitted, and automate away admin tasks so your underwriters can <strong>get more done with the same resources</strong>.
-            </h3>
+        <div class="row justify-content-center text-center">
+          <div class="col-xl-12 col-lg-9 mb-6">
+            <h2 class="display-3 mx-xl-2">We transform mortgage lenders</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-12">
+            <div class="row">
+              <div class="row text-center">
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-round bg-primary mx-auto mb-4">
+                    <img class="icon icon-md" src="assets/img/icons/theme/shopping/chart-bar-2.svg" alt="decoration" data-inject-svg /></img>
+                  </div>
+                  <h4>Grow application volume</h4>
+                  <p class="lead mx-xl-3">Our world-class, cloud-native origination system lets you underwrite more cases, faster.</p>
+                </div>
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-round bg-primary mx-auto mb-4">
+                    <img class="icon icon-md" src="assets/img/icons/theme/code/github.svg" alt="decoration" data-inject-svg /></img>
+                  </div>
+                  <h4>Filter out poor quality applications earlier</h4>
+                  <p class="lead mx-xl-3">Live policy prompts give real-time feedback to brokers and block unsuitable applications.</p>
+                </div>
+                <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-round bg-primary mx-auto mb-4">
+                    <img class="icon icon-md" src="assets/img/icons/theme/navigation/angle-double-right.svg" alt="decoration" data-inject-svg /></img>
+                  </div>
+                  <h4>Automate manual tasks</h4>
+                  <p class="lead mx-xl-3">Send emails, create and assign tasks and generate documents with our best-in-class automations.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-
+    <section class="bg-white text-dark pt-0">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-xl-11">
-            <div class="row">
-              <div class="col-md-4 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <div class="card card-body">
-                  <div class="pb-2">
-                    <img class="align-items-left icon icon-md" src="assets/img/icons/theme/communication/chat-check.svg" data-inject-svg />
-                  </div>
-
-                  <h3>Real-time feedback</h3>
-                  <p>
-                    Brokers see granular, real-time feedback as soon as they breach your lending criteria. We stop brokers submitting unsuitable applications, so you only get high-quality cases.
-                  </p>
-                  <!-- <a href="#" class="hover-arrow">Watch the video</a> -->
-                </div>
-              </div>
-              <div class="col-md-4 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div class="card card-body">
-                  <div class="pb-2">
-                    <img class="align-items-left icon icon-md" src="assets/img/icons/theme/general/clipboard.svg" data-inject-svg />
-                  </div>
-
-                  <h3>Bespoke packaging</h3>
-                  <p>
-                    We give bespoke packaging requirements up-front to make life easier for brokers – so they get you the information you need as early as possible.
-                  </p>
-                  <!-- <a href="#" class="hover-arrow">Watch the video</a> -->
-                </div>
-              </div>
-              <div class="col-md-4 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="card card-body">
-                  <div class="pb-2">
-                    <img class="align-items-left icon icon-md" src="assets/img/icons/theme/general/settings-1.svg" data-inject-svg />
-                  </div>
-
-                  <h3>Advanced<br> controls</h3>
-                  <p>
-                    We can even prevent brokers from starting DIPs if they fail affordability, or prevent them from submitting if the case is clearly outside of your criteria.
-                  </p>
-                  <!-- <a href="#" class="hover-arrow">Watch the video</a> -->
-                </div>
-              </div>
-            </div>
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate text-center text-md-right" data-aos="fade-up" data-aos-delay="300">
+            <span class="display-3 text-dark d-block" data-countup="" data-start="1" data-end="22"  data-duration="2" data-suffix="%" data-grouping="true">22%</span>
+            <span class="h4">increased conversion from DIP to completion</span>
           </div>
-
-          <div class="col-xl-12">
-            <div class="pb-4 pt-1"><hr></div>
-            <div class="row">
-              <div class="col-md-6 col-lg-6 d-flex">
-                <a href="/origination-platform" class="card card-body text-light bg-pattern-lines-dark vignette-shadow justify-content-between hover-shadow3d shadow-3d">
-                  <div>
-                    <h3><span class="logotype">Mast. </span>Origination Platform</h3>
-                    <p class="pt-1 lead">Accept applications faster, with fewer errors.</p>
-                    <div class="pt-4">
-                      <strong>
-                        <p class="hover-arrow">More information</p>
-                      </strong>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-6 d-flex">
-                <a href="/policy-engine" class="card card-body text-light bg-pattern-lines-dark vignette-shadow justify-content-between hover-shadow3d shadow-3d">
-                  <div>
-                    <h3><span class="logotype">Mast. </span>Policy Engine</h3>
-                    <p class="pt-1 lead">Manage and share lending criteria in one place.</p>
-                    <div class="pt-4">
-                      <strong>
-                        <p class="hover-arrow">More information</p>
-                      </strong>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div class="col-md-2 mb-3 mb-md-0 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="300">
+            <img width="120px" src="assets/img/mbsl-logo.png" alt="MBS Lending logo" style="filter: grayscale(100%); opacity: 0.5;">
           </div>
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate text-center text-md-left" data-aos="fade-up" data-aos-delay="200">
+            <span class="display-3 text-dark d-block" data-countup="" data-start="1" data-end="73" data-duration="2.5" data-grouping="true" data-suffix="%">73%</span>
+            <span class="h4">more lending with the same operational capacity</span>
+          </div>
+        </div>
+
+        <div class="col text-center pt-5">
+          <a href="/mbs" class="lead hover-arrow">See how we helped transform MBS Lending</a>
         </div>
       </div>
     </section>
-
-    <div class="divider">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="injected-svg bg-primary-2" data-src="assets/img/dividers/divider-3.svg">
-        <path d="M0,0 C6.83050094,50 15.1638343,75 25,75 C41.4957514,75 62.4956597,0 81.2456597,0 C93.7456597,0 99.9971065,0 100,0 L100,100 L0,100"></path>
-      </svg>
-    </div>
 
     <section class="bg-primary-2 text-light">
       <div class="container">
@@ -175,7 +140,7 @@
           <div class="col-xl-12">
             <div class="row my-4">
               <div class="col">
-                <h2 class="h1 display-4 text-center">The benefits of Mast</h2>
+                <h4 class="h1 display-4 text-center">Here's how we do it</h4>
               </div>
             </div>
 
@@ -183,48 +148,63 @@
               <div class="col-12 col-xl-9">
                 <div class="col-12 d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon-round mr-3 bg-primary-3">
-                    <img class="icon" src="assets/img/icons/theme/shopping/sale-2.svg" alt="decoration" data-inject-svg />
+                    <img class="icon" src="assets/img/icons/theme/general/dislike.svg" alt="decoration" data-inject-svg />
                   </div>
                   <div>
-                    <h4 class="mb-2">No hidden fees</h4>
-                    <p class="lead pr-xl-4">Our <strong>usage-based pricing model</strong> means you always run the latest version, and never have to pay for upgrades, maintenance or deployment. You only pay for what you use, so we have a stake in helping you grow.</p>
+                    <h4 class="mb-2">Delivering a user-friendly system</h4>
+                    <p class="lead pr-xl-4">Brokers can easily navigate our broker portal, with intuitive application forms and clear case and task tracking built in too.</p>
                   </div>
                 </div>
                 <div class="col-12 d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                   <div class="icon-round mr-3 bg-primary-3">
-                    <img class="icon" src="assets/img/icons/theme/tools/pantone.svg" alt="decoration" data-inject-svg />
+                    <img class="icon" src="assets/img/icons/theme/communication/chat-error.svg" alt="decoration" data-inject-svg />
                   </div>
                   <div>
-                    <h4 class="mb-2">A flexible solution to help you be more agile</h4>
-                    <p class="lead pr-xl-4">As we're a cloud-native platform, <strong>we make changes in days, not months</strong>. If you need to adapt to how you operate, or want to launch a new product line, with Mast you can react faster than ever before.</p>
+                    <h4 class="mb-2">Providing real-time lending policy feedback</h4>
+                    <p class="lead pr-xl-4">As information is keyed into application forms, we let users know immediately if their application is likely to be outside of your lending criteria, or which documents you’ll need – saving both of you time and giving certainty for brokers.</p>
                   </div>
                 </div>
-                <div class="col-12 d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-12 d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                   <div class="icon-round mr-3 bg-primary-3">
                     <img class="icon" src="assets/img/icons/theme/general/half-star.svg" alt="decoration" data-inject-svg />
                   </div>
                   <div>
-                    <h4 class="mb-2">We listen to lenders</h4>
-                    <p class="lead pr-xl-4">When you join Mast, <strong>we become part of your team</strong>. We focus on close communication and working together to make sure we're building for your needs and so you get the most out of our platform. Our success relies on you achieving your aims.</p>
+                    <h4 class="mb-2">Becoming a real partner to our clients</h4>
+                    <p class="lead pr-xl-4">Our usage-based pricing model means you only pay for what you use, so we have a stake in helping you grow. You always run the latest version, and never have to pay for upgrades, maintenance or deployment.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row justify-content-center text-center pt-2">
+          <a href="/product" class="btn btn-lg btn-light">Learn more about our platform →</button>
+        </div>
+      </div>
+    </section>
 
-        <div class="row justify-content-center text-center">
-          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-            <span class="display-4 text-light d-block" data-countup="" data-start="1" data-end="20"  data-duration="2" data-suffix="%+" data-grouping="true">20%</span>
-            <span class="h6">Improvement in Application Conversion</span>
+    <section class="has-divider bg-primary-alt">
+      <!-- <div class="divider flip-y"> -->
+      <!--   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="injected-svg" data-src="assets/img/dividers/divider-2.svg"> -->
+      <!--     <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path> -->
+      <!--   </svg> -->
+      <!-- </div> -->
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-md-5">
+            <img src="assets/img/founders.jpg" alt="Mast team photo" class="layer-2" style="border-radius:1rem;">
           </div>
-          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-            <span class="display-4 text-light d-block" data-countup="" data-start="100000" data-end="50000000" data-duration="2.3" data-grouping="true" data-prefix="£" data-suffix="+">£50,000,000</span>
-            <span class="h6">Mortgage Applications Processed</span>
-          </div>
-          <div class="col-md-4 mb-3 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-            <span class="display-4 text-light d-block" data-countup="" data-start="1" data-end="8.5" data-duration="1.5" data-grouping="true" data-suffix="/10" data-decimal-places="1">8.5/10</span>
-            <span class="h6">Average Broker NPS</span>
+
+          <div class="col-xl-7 col-md-7 pl-3">
+            <div class="ml-xl-2 mt-2">
+              <div class="display-4">We're Mast<span class="subheading-dot">.</span></div>
+              <h4><strong>We're an agile and ambitious company based in London.</strong></h4>
+              <p class="lead">Our focus is on innovation, product excellence, and customer success.</p>
+              <p class="lead">We consider our clients to be our partners, and we succeed when they do.</p>
+              <div class="row text-center pt-2">
+                <a href="/about" class="btn btn-lg btn-dark">Meet the team →</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
