@@ -216,8 +216,9 @@
               <p>Leave your details and a member of the Mast team will be in touch to organise a call.</p>
             </div>
             <div class="pt-3 text-center">
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <div class="form-group">
+                  <input name="bot-field" type="text" class="form-control mb-1" placeholder="do not fill this in" hidden>
                   <div class="col-12">
                     <input name="email" type="email" class="form-control mb-1" required="" placeholder="Your email">
                   </div>
