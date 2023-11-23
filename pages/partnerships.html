@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  @@include('./header.html')
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+    @@include('./nav-light.html')
+    <section class="bg-primary-alt header-inner o-hidden">
+      <div class="container">
+        <div class="row my-3">
+        </div>
+        <div class="row py-6 min-vh-30 text-center justify-content-center align-items-center layer-2">
+          <div class="standfirst col-xl-8 col-lg-10">
+            <h1 class="display-4">Partnerships.</h1>
+          </div>
+        </div>
+      </div>
+      <div class="divider layer-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="injected-svg" data-src="assets/img/dividers/divider-2.svg">
+          <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+        </svg>
+      </div>
+    </section>
+    <section class="pb-6 mb-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8">
+            <p class="lead">
+              <strong>
+                We believe that every company has its strengths. We're always on the lookout for innovative services to enhance our clients' origination journey to help set them apart.
+              </strong>
+            </p>
+            <p class="lead">
+              Our cloud-native approach lets us quickly add new integrations to our platform, empowering our clients to build a customised system that meets their exact needs. And our open APIs allow lenders to build their own integrations with third-parties, without vendor lock-in.
+            </p>
+            <p class="lead">
+              If you’re interested in partnering with us, or would like to know how working with these partners might improve your mortgage origination journey, get in touch below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-0">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <small class="text-uppercase">We work with</small>
+          </div>
+        </div>
+        <div style="">
+          <div class="row">
+            <div class="col">
+              <ul class="d-flex flex-wrap justify-content-center align-items-center list-unstyled">
+                <li class="mx-2 mb-5 aos-init aos-animate">
+                  <img src="assets/img/partners/finastra.jpeg" width="180" alt="Finastra logo">
+                </li>
+                <li class="mx-2 mb-5 aos-init aos-animate">
+                  <img src="assets/img/partners/phoebus.jpeg" width="160" alt="Phoebus logo">
+                </li>
+                <li class="mx-2 mb-5 aos-init aos-animate">
+                  <img src="assets/img/partners/stripe.png" width="180" alt="Stripe logo">
+                </li>
+                <li class="mx-2 mb-5 aos-init aos-animate align-items-center">
+                  <img src="assets/img/partners/consectus.png" width="180" alt="Consectus logo">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    @@include('./footer.html')
+    @@include('./scripts.html')
+  </body>
+</html>
