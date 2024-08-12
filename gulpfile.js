@@ -69,7 +69,8 @@ getPaths = () => {
       liquid: 'pages/**/*.liquid',
       liquidRoot: 'pages/',
       includes: 'pages/include/',
-      layouts: 'pages/layouts'
+      layouts: 'pages/layouts',
+      wellKnown: 'pages/well-known/**/*'
     },
     js: {
       all: "js/**/*",
@@ -135,6 +136,7 @@ getPaths = () => {
       fonts: 'dist/assets/fonts',
       video: 'dist/assets/video',
       documentation: 'dist/documentation',
+      wellKnown: 'dist/well-known',
       exclude: ['!**/desktop.ini', '!**/.DS_store'],
     },
     copyDependencies: copyDeps,
@@ -301,7 +303,7 @@ gulp.task('mrarejs', async (done) => {
 
 // Assets
 gulp.task('copy-assets', function () {
-  return gulp.src(paths.assets.all, {
+  return gulp.src([paths.assets.all, paths.pages.wellKnown], {
       base: paths.assets.folder
     })
     .pipe(newer(paths.dist.assets))
