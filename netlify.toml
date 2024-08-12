@@ -11,3 +11,8 @@
   from = "/application-platform"
   to = "/origination-platform"
   status = 200
+
+[[redirects]]
+  from = "/.well-known/*"
+  to = "/well-known/:splat"
+  status = 200
